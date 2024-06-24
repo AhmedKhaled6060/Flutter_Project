@@ -1,0 +1,49 @@
+{
+  "Stateless Widget": {
+    "prefix": "less",
+    "body": [
+      "class ${1:MyWidget} extends StatelessWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Scaffold(",
+      "      appBar: AppBar(",
+      "        title: Text('${1:MyWidget}'),",
+      "      ),",
+      "      body: Center(",
+      "        child: Text('Hello, ${1:MyWidget}!'),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a new stateless widget"
+  },
+  "Stateful Widget": {
+    "prefix": "ful",
+    "body": [
+      "class ${1:MyWidget} extends StatefulWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  _${1:MyWidget}State createState() => _${1:MyWidget}State();",
+      "}",
+      "",
+      "class _${1:MyWidget}State extends State<${1:MyWidget}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Scaffold(",
+      "      appBar: AppBar(",
+      "        title: Text('${1:MyWidget}'),",
+      "      ),",
+      "      body: Center(",
+      "        child: Text('Hello, ${1:MyWidget}!'),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Create a new stateful widget"
+  }
+}
